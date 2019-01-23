@@ -51,7 +51,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# DONE: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -73,33 +73,34 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function at least TWICE (with different values
+# DONE: 4b.  In main, CALL your function at least TWICE (with different values
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
 
 
-def turtle():
+def turtle(given, give):
     window = rg.TurtleWindow()
     green_turtle = rg.SimpleTurtle('turtle')
-    green_turtle.pen = rg.Pen('green', 'given')
+    green_turtle.pen = rg.Pen('green', given)
     five_turtle = rg.SimpleTurtle('turtle')
-    five_turtle.pen = rg.Pen('give', '5')
-    five_turtle.speed = 20
-    green_turtle.speed = 20
-    given = 4
-    give = 'blue'
+    five_turtle.pen = rg.Pen(give, '5')
+    five_turtle.speed = 30
+    green_turtle.speed = 30
     green_turtle.forward(100)
     five_turtle.backward(100)
     window.close_on_mouse_click()
 
 
 def new():
-    turtle()
+    turtle(given=4, give='red')
+    turtle(given=7, give='cyan')
 
+
+new()
 
 ###############################################################################
-# TODO: 5.
+# DONE: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
