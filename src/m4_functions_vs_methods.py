@@ -157,9 +157,12 @@ def try_functions():
      -- One jumps to (100, 200), then moves (while drawing) to (0, 0)
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
 
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # DONE: 5. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #    NOTE: This function requires
@@ -204,8 +207,24 @@ def try_methods_and_functions():
 
       8. Draw a SQUARE whose sides are each of length 50.
     """
+    blue_turtle = rg.SimpleTurtle('turtle')
+    blue_turtle.pen = rg.Pen('blue', 5)
+    blue_turtle.backward(150)
+    blue_turtle.speed = 1
+    draw_many_squares(blue_turtle, 2, 100, 30)
+    blue_turtle.speed = 5
+    blue_turtle.pen = rg.Pen('red', 5)
+    draw_many_squares(blue_turtle, 10, 50, 15)
+    blue_turtle.speed = 100
+    blue_turtle.pen = rg.Pen('red', 35)
+    draw_many_squares(blue_turtle, 8, 300, 60)
+    blue_turtle.pen = rg.Pen('black', 3)
+    blue_turtle.backward(200)
+    blue_turtle.draw_circle(30)
+    draw_many_squares(blue_turtle, 1, 50, 0)
+
     ###########################################################################
-    # TODO: 6. Implement and test this function, per its doc-string above.
+    # DONE: 6. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #   NOTE: This function should ** CALL ** the
