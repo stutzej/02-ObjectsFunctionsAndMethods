@@ -19,9 +19,9 @@ def main():
     # -------------------------------------------------------------------------
     # When the _TODO_s ask you to test YOUR code,
     # comment-out the following two statements and replace them
-    # by calls to   better_draw_circles   et al as needed.
-    # -------------------------------------------------------------------------
-    # draw_circles(rg.Point(100, 50))
+    #     # by calls to   better_draw_circles   et al as needed.
+    #     # -------------------------------------------------------------------------
+    #     # draw_circles(rg.Point(100, 50))
     # draw_circles(rg.Point(-200, 0))
     # better_draw_circles(rg.Point(100, 50), 10)
     # better_draw_circles(rg.Point(-200, 0), 50)
